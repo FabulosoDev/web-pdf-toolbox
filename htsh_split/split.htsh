@@ -16,7 +16,7 @@ if [ "$split" = "d" ]; then
 	last=$(echo $range | sed --expression='s/.*-\([0-9]\)/\1/')
 	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=$first -dLastPage=$last -sOutputFile="$output" "$input" > /dev/null 2>&1
 	echo "Split ok. <br>"
-	echo "<a href="$subpath/$output" class="btn btn-success" download>Download splitted pdf.</a>"
+	echo "<a href=\"$subpath/$output\" class=\"btn btn-success\" download>Download splitted pdf.</a>"
 fi
 ?>
         

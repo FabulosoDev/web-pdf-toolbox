@@ -43,7 +43,7 @@ if [ "$watermark" = "d" ]; then
 	rm *baking* withoutlinks.pdf watermarked.pdf
 	echo $output;
 	echo "Processing ok. <br>";
-	echo "<a href="$subpath/$output" class="btn btn-success" download>Download processed pdf.</a>";
+	echo "<a href=\"$subpath/$output\" class=\"btn btn-success\" download>Download processed pdf.</a>";
 fi
 ?>
         

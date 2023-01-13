@@ -16,7 +16,7 @@ if [ "$contrast" = "d" ]; then
 	convert -strip $(ls -1 $output*.jpg) $output
 	rm $output*.jpg
 	echo "Processing ok. <br>"
-	echo "<a href="$subpath/$output" class="btn btn-success" download>Download processed pdf.</a>"
+	echo "<a href=\"$subpath/$output\" class=\"btn btn-success\" download>Download processed pdf.</a>"
 
 fi
 ?>

@@ -9,7 +9,7 @@ echo "Convert..."
 	cd $path/
 	convert -strip $(ls -1 *.) convert.pdf > /dev/null 2>&1
 	echo "Convert ok. <br>"
-	echo "<a href="$subpath/convert.pdf" class="btn btn-success" download>Download converted pdf.</a>"
+	echo "<a href=\"$subpath/convert.pdf\" class=\"btn btn-success\" download>Download converted pdf.</a>"
 fi
 ?>
 

@@ -9,7 +9,7 @@ echo "Combine..."
 	cd $path/
 	gs -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=combine.pdf -dBATCH $(ls -1 *.) > /dev/null 2>&1
 	echo "Combine ok. <br>"
-	echo "<a href="$subpath/combine.pdf" class="btn btn-success" download>Download combined pdf.</a>"
+	echo "<a href=\"$subpath/combine.pdf\" class=\"btn btn-success\" download>Download combined pdf.</a>"
 fi
 ?>
 

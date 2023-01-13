@@ -19,7 +19,7 @@ if [ "$pdf_to_img" = "d" ]; then
 	fi
 	tar zcvf $output.tar.gz $output*
 	echo "Convert ok. <br>"
-	echo "<a href="$subpath/$output.tar.gz" class="btn btn-success" download>Download converted img.</a>"
+	echo "<a href=\"$subpath/$output.tar.gz\" class=\"btn btn-success\" download>Download converted img.</a>"
 fi
 ?>
         
