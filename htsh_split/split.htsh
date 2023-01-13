@@ -1,5 +1,5 @@
 <div id="split" class="tab-pane fade">
-	<form>
+	<form method="POST" action="/">
 		<label for="file" class="form-label">Range of pages (n-m):</label>
 		<input type="text" name="range" class="form-control"><br>
 		<button id="d" type="submit" name="split" class="d btn btn-dark" value="d">Split pdf</button>     

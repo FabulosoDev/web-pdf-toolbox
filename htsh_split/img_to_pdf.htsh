@@ -1,5 +1,5 @@
 <div id="img_to_pdf" class="tab-pane fade">
-	<form id="choice" name='form' method="POST" action="/">
+	<form method="POST" action="/">
 		<button id="img_to_pdf" type="submit" name="img_to_pdf" class="b btn btn-dark" value="b">Convert to PDF</button>     
 	</form>
 <?bash

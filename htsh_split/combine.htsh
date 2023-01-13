@@ -1,5 +1,5 @@
 <div id="combine" class="tab-pane fade">
-	<form id="choice" name='form' method="POST" action="/">
+	<form method="POST" action="/">
 		<button id="b" type="submit" name="combine" class="b btn btn-dark" value="b">Combine all files</button>     
 	</form>
 <?bash

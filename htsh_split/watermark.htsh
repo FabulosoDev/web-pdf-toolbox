@@ -1,5 +1,5 @@
 <div id="watermark" class="tab-pane fade">
-	<form>
+	<form method="POST" action="/">
 		<label for="file" class="form-label">Watermark text:</label>
 		<input type="text" name="caption" class="form-control"><br>
 		<button id="watermark" type="submit" name="watermark" class="d btn btn-dark" value="d">Add watermark</button><br>    

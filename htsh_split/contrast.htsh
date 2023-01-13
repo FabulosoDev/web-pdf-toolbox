@@ -1,5 +1,5 @@
 <div id="contrast" class="tab-pane fade">
-	<form>
+	<form method="POST" action="/">
 		<label for="file" class="form-label">Contrast (between 0 and 100):</label>
 		<input type="text" name="range" class="form-control"><br>
 		<button id="contrast" type="submit" name="contrast" class="d btn btn-dark" value="d">Change contrast</button>     

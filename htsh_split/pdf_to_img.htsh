@@ -1,5 +1,5 @@
 <div id="pdf_to_img" class="tab-pane fade">
-	<form>
+	<form method="POST" action="/">
 		<label for="file" class="form-label">Range of pages (n-m starting from 0, empty for all pages):</label>
 		<input type="text" name="range" class="form-control"><br>
 		<button id="pdf_to_img" type="submit" name="pdf_to_img" class="d btn btn-dark" value="d">Convert to IMG</button>     
