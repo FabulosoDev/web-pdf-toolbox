@@ -30,13 +30,13 @@ if [ "$watermark" = "d" ]; then
 	fontsize=100
 	cd $path/
 	output=$(tail -1 list | grep -o -P "(?<=[0-9]\. ).*pdf")
-    output=$(echo $output | sed --expression='s/[^a-zA-Z0-9]/_/g')_watermarked_compressed.pdf
+	output=$(echo $output | sed --expression='s/[^a-zA-Z0-9]/_/g')_watermarked_compressed.pdf
 	input=$(tail -1 list | grep -o -P ^[0-9]\.)
 	removelinks $input withoutlinks.pdf
 	convert -background white -alpha remove -alpha off -density 300 withoutlinks.pdf baking.png
 	convert -rotate 315 -background transparent -fill darkblue -size 1500x1500 -density 150x150 -pointsize $fontsize -gravity center "caption:${caption}" watermark.png
 	for page in baking-*.png; do 
-		composite -watermark $opacity -gravity center watermark.png ${page} wm-${page%.*}.png; 
+		composite -watermark $opacity -gravity center watermark.png ${page} wm-${page%.*}.png;
 	done
 	convert wm-baking-*.png watermarked.pdf
 	pdfcompress watermarked.pdf $output
@@ -46,5 +46,5 @@ if [ "$watermark" = "d" ]; then
 	echo "<a href=\"$subpath/$output\" class=\"btn btn-success\" download>Download processed pdf.</a>";
 fi
 ?>
-        
+
 </div>
